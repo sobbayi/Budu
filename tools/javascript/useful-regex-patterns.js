@@ -18,6 +18,10 @@ var namefilter     = /^[A-Za-z\-]{2,20} [A-Za-z\- ]{5,30}$/
 // small letter, number and at least one of the following symbols (!@#$&*-_)
 var passwordfilter = /^(?=.*[A-Z]{1,})(?=.*[!@#$&*\-_]{1,})(?=.*[0-9]{1,})(?=.*[a-z]+).{8,16}$/
 
+//Password filter that must be 8-16 characters long, contain at least one capital letter, 
+// small letter, number SYmbols not necessary
+var capsSmallDigitsFilter = /^(?=.*[A-Z]{1,})(?=.*[0-9]{1,})(?=.*[a-z]+).{8,16}$/
+
 // Date filter that checks a date in the the MM/DD/YYYY OR MM-DD-YYYY formats ranging from 1940 - 2005
 var datefilter     = /(0[1-9]|1[012])[- \/.](0[1-9]|[12][0-9]|3[01])[- \/.](19[4-9]{1}[0-9]{1}|200[1-5])/
 
